@@ -8,5 +8,5 @@ def index(request):
     return HttpResponse('Главная су')
 
 
-def index(request):
-    return HttpResponse('Главная су')
+def group_posts(request, group):
+    return HttpResponse(f'Главная Groups: {group}')
