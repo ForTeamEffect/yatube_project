@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from yatube.posts.views import group_posts
-
+# from vi import group_posts
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('posts.urls')),
+    path('', include('posts.urls',namespace='posts')),
+    # path('group/<slug:slug>/', group_posts)
 ]
