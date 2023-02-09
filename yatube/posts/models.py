@@ -13,3 +13,10 @@ class Post(models.Model):
         related_name='posts'
     )
 
+
+class Group(models.Model):
+    title = models.TextField()
+    slug = models.TextField()
+    description = models.TextField()
+    def __str__(self):
+        return Group.title
